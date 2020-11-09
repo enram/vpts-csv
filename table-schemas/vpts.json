@@ -1,0 +1,9 @@
+{
+  "fields": [
+    {
+      "name": "radar",
+      "type": "string",
+      "format": "default"
+    }
+  ]
+}
