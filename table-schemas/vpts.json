@@ -4,6 +4,91 @@
       "name": "radar",
       "type": "string",
       "format": "default"
+    },
+    {
+      "name": "datetime",
+      "type": "datetime",
+      "format": "default"
+    },
+    {
+      "name": "height",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "u",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "v",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "ff",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "dd",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "sd_vvp",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "gap",
+      "type": "boolean",
+      "format": "default"
+    },
+    {
+      "name": "dbz",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "eta",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "dens",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "DBZH",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "n",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "n_all",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "n_dbz",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "n_dbz_all",
+      "type": "integer",
+      "format": "default"
     }
   ]
 }
