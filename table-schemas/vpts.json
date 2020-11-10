@@ -89,6 +89,26 @@
       "name": "n_dbz_all",
       "type": "integer",
       "format": "default"
+    },
+    {
+      "name": "u_wind",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "v_wind",
+      "type": "number",
+      "format": "default"
+    },
+    {
+      "name": "vcp",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "processing",
+      "type": "integer",
+      "format": "default"
     }
   ]
 }
