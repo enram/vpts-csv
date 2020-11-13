@@ -53,7 +53,7 @@
     },
     {
       "name": "w",
-      "description": "Vertical speed component (unreliable!) in m/s.",
+      "description": "Vertical speed component (unreliable) in m/s.",
       "type": "number",
       "format": "default",
       "constraints": {
