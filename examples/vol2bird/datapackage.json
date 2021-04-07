@@ -1,0 +1,13 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "vpts",
+      "path": "behel_vpts_20191015.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "format": "csv",
+      "schema": "https://raw.githubusercontent.com/enram/vpts/main/table-schemas/vol2bird.json"
+    }
+  ]
+}
