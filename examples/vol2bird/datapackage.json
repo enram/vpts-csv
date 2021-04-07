@@ -1,5 +1,34 @@
 {
   "profile": "tabular-data-package",
+  "radar": {
+    "code": "behel",
+    "odim_code": "behel",
+    "country_code": "BE",
+    "location": "Helchteren",
+    "latitude": 51.069199,
+    "longitude": 5.406138,
+    "antenna_height": 144
+  },
+  "processing": [
+    {
+      "algorithm": "vol2bird",
+      "version": "",
+      "source": "WMO:06475,RAD:BX43,PLC:Helchteren,NOD:behel,CTY:605,CMT:behel_scan_200km_dp_dBZ",
+      "start": "",
+      "end": ""
+    }
+  ],
+  "sources": [
+    {
+      "title": "RMI_DATASET_CROW",
+      "path": "https://opendata.meteo.be/geonetwork/srv/eng/catalog.search#/metadata/RMI_DATASET_CROW"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
   "resources": [
     {
       "name": "vpts",
