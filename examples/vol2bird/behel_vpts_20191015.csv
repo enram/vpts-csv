@@ -1,6 +1,7 @@
 # vol2bird Vertical Profile of Birds (VPB)
 # source: WMO:06475,RAD:BX43,PLC:Helchteren,NOD:behel,CTY:605,CMT:behel_scan_200km_dp_dBZ
 # polar volume input: /tmp/20191015143000.rad.behel.pvol.dbzh.scanz.pvol.h5
+# transformed to csv from: https://opendata.meteo.be/ftp/observations/radar/vbird/behel/2019/behel_vpts_20191015.txt
 date,time,HGHT,u,v,w,ff,dd,sd_vvp,gap,dbz,eta,dens,DBZH,n,n_dbz,n_all,n_dbz_all
 20191015,1430,0,nan,nan,nan,nan,nan,0.69,TRUE,nan,nan,0,23.63,0,0,10276,10411
 20191015,1430,200,nan,nan,nan,nan,nan,0.92,TRUE,nan,nan,0,23.18,0,0,60511,61162
