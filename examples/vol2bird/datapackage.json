@@ -9,6 +9,10 @@
     "longitude": 5.406138,
     "antenna_height": 144
   },
+  "temporal": {
+    "start": "2019-10-15T14:30:00Z",
+    "end": "2019-10-15T23:55:00Z"
+  },
   "processing": [
     {
       "algorithm": "vol2bird",
