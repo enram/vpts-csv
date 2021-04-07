@@ -1,140 +1,36 @@
 {
   "profile": "tabular-data-package",
+  "radar": {
+    "code": "KLOT",
+    "odim_code": "",
+    "country_code": "US",
+    "location": "Chicago",
+    "latitude": 41.6044264,
+    "longitude": -88.084361,
+    "antenna_height": ""
+  },
+  "temporal": {
+    "start": "",
+    "end": ""
+  },
+  "processing": [
+  ],
+  "sources": [
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
   "resources": [
     {
       "name": "vpts",
       "path": "KLOT20070301_231800.csv",
       "profile": "tabular-data-resource",
-      "encoding": "utf-8",
       "format": "csv",
-      "schema": {
-        "fields": [
-          {
-            "name": "bin_lower",
-            "type": "integer",
-            "rdfType": "https://enram.github.io/vpts/1.0/height",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "height",
-            "type": "integer",
-            "rdfType": "https://enram.github.io/vpts/1.0/height_mean",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "linear_eta",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/eta",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "nbins",
-            "type": "integer",
-            "rdfType": "https://enram.github.io/vpts/1.0/n_dbz_all",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "direction",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/dd",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "speed",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/ff",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "u",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/u",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "v",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/v",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "rmse",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/sd_vvp",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "elev1",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/elev1",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "nvolumes_gr35_e1",
-            "type": "integer",
-            "rdfType": "https://enram.github.io/vpts/1.0/nvolumes_gr35_e1",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "elev2",
-            "type": "number",
-            "rdfType": "https://enram.github.io/vpts/1.0/elev2",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "nvolumes_gr35_e2",
-            "type": "integer",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "vcp",
-            "type": "integer",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "linear_eta_unfiltered",
-            "type": "number",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "percent_rain",
-            "type": "number",
-            "constraints": {
-              "required": false
-            }
-          }
-        ]
-      }
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "https://raw.githubusercontent.com/enram/vpts/main/table-schemas/cajun.json"
     }
   ]
 }
