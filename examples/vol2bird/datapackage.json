@@ -16,7 +16,7 @@
   "processing": [
     {
       "algorithm": "vol2bird",
-      "version": "",
+      "version": "0.4.0",
       "source": "WMO:06475,RAD:BX43,PLC:Helchteren,NOD:behel,CTY:605,CMT:behel_scan_200km_dp_dBZ",
       "start": "",
       "end": ""
