@@ -2,20 +2,31 @@
   "profile": "tabular-data-package",
   "radar": {
     "code": "KLOT",
-    "odim_code": "",
     "country_code": "US",
     "location": "Chicago",
     "latitude": 41.6044264,
     "longitude": -88.084361,
-    "antenna_height": ""
+    "antenna_height": 232,
+    "band": "S",
+    "wavelength": 10.6
   },
   "temporal": {
-    "start": "",
-    "end": ""
+    "start": "2007-03-01T23:18:00Z",
+    "end": "2007-03-01T23:18:00Z"
   },
   "processing": [
+    {
+      "algorithm": "cajun",
+      "version": "",
+      "start": "",
+      "end": ""
+    }
   ],
   "sources": [
+    {
+      "title": "UMass Cajun data",
+      "path": ""
+    }
   ],
   "licenses": [
     {
