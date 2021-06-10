@@ -4,7 +4,9 @@ vpts is a community developed data exchange format for time series of vertical p
 
 It is a specialized kind of [Frictionless Data Package](https://frictionlessdata.io/data-package/).
 
-Status: **under heavy development, not usable yet**
+Status: under heavy development, **not usable yet**
+
+Discussions should take place into issues, each subsequent decision **must** be reflected in [the specification document](specs/vpts_1_0.md).
 
 ## Goals of version 1.0
 
