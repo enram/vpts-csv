@@ -33,26 +33,25 @@ and that also conforms to the specifications below:
 
 - The following fields are allowed in the CSV data:
 
-| Name     	| Required 	| Description                        	| Type/format           |
-|----------	|----------	|------------------------------------	|--------------------	|
-| datetime 	| yes      	| Event date                         	| ISO8601 string     	|
-| height   	| yes      	| Height above mean sea level        	| Positive Integer (m.) |
-| ff       	| yes      	| Speed                              	| Positive float        |
-| dd       	| yes      	| Direction                          	| Positive float        |
-| dens     	| yes      	| Density                            	| Positive float        |
-| eta      	| yes      	| Linear reflectivity                	| Positive float        |
-| sd_vvp   	| yes      	| Radial velocity standard deviation 	| Positive float        |
-| DBZH     	| yes      	| total reflectivity factor          	| Float              	|
-| dbz      	| no       	|                                    	| Float              	|
-| u        	| no       	|                                    	| Float              	|
-| v        	| no       	|                                    	| Float              	|
-| gap      	| no       	|                                    	| Boolean              	|
-| w        	| no       	|                                    	| Float              	|
-| n_dbz    	| no       	|                                    	| Integer               |
-| dd        | no        |                                       | Positive float        |
-| n         | no        |                                       | Positive Integer      |
-| n_all     | no        |                                       | Positive Integer      |
-| n_dbz_all | no        |                                       | Positive Integer      |
+| Name     	| Required 	| Description                        	                        | Type/format           |
+|----------	|----------	|------------------------------------	                        |--------------------	|
+| datetime 	| yes      	| Event date                         	                        | ISO8601 string     	|
+| height   	| yes      	| Height above mean sea level, m       	                        | Positive Integer      |
+| dens     	| yes      	| Density                            	                        | Positive float        |
+| ff       	| yes      	| Horizontal speed, m/s                                         | Positive float        |
+| dd       	| yes      	| Direction, degrees                   	                        | Positive float        |
+| eta      	| yes      	| Linear reflectivity                	                        | Positive float        |
+| sd_vvp   	| yes      	| Radial velocity standard deviation 	                        | Positive float        |
+| DBZH     	| yes      	| Total reflectivity factor          	                        | Float              	|
+| dbz      	| no       	| Animal reflectivity factor, dBZ                               | Float              	|
+| u        	| no       	| Speed component west to east, m/s                             | Float              	|
+| v        	| no       	| Speed component north to south, m/s                           | Float              	|
+| gap      	| no       	| Angular data gap detected in                                  | Boolean              	|
+| w        	| no       	| Vertical speed, m/s                                           | Float              	|
+| n_dbz    	| no       	| Number of data points used for reflectivity-based estimates   | Integer               |
+| n         | no        | Number of data points used for the speed estimates            | Positive Integer      |
+| n_all     | no        | Number of data points used for sd_vvp                         | Positive Integer      |
+| n_dbz_all | no        | Number of data points used for DBZH                           | Positive Integer      |
 
 (TODO: make sure type/format have a clear datapackage-type mapping)
 
