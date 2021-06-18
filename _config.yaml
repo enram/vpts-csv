@@ -19,16 +19,16 @@
 # in the templates via {{ site.myvariable }}.
 
 # SITE SETTINGS
-title: VPTS
-description: Time series of vertical profiles of biological signals
+title: VPTS-DP
+description: Data exchange format for biological signals detected by weather radars
 author: GloBAM
 url: "https://enram.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/vpts" # the subpath of your site, e.g. /blog
+baseurl: "/vpts-dp" # the subpath of your site, e.g. /blog
 
 # SOCIAL PROFILES
 email: 
 twitter_username: 
-github_username: enram/vpts
+github_username: enram/vpts-dp
 
 # THEME SETTINGS
 theme: minima
