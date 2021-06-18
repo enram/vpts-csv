@@ -1,8 +1,9 @@
 ---
 permalink: /
+description: Data exchange format for biological signals detected by weather radars
 ---
 
-# Data exchange format for biological signals detected by weather radars (VPTS-DP)
+# VPTS-DP
 
 **VPTS-DP** is a community developed **data exchange format** for biological signals detected by weather radars. VPTS data are time series of vertical profiles of biological signals. These express the density, speed and direction of birds, bats and insects within the weather radar volume, grouped in altitude layers. A VPTS-DP is a [Frictionless Data Package](https://specs.frictionlessdata.io/data-package/) that consists of:
 
