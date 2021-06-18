@@ -7,7 +7,7 @@ layout: base
 
     {{ content }}
 
-    {% assign profile_file = "vpts-profile" %}
+    {% assign profile_file = "vpts-dp-profile" %}
     {% assign properties = site.data[profile_file].allOf[1].properties %}
 
     <p class="small">Source: <a href="https://github.com/{{ site.github_username }}/blob/main/{{ profile_file }}.json"><code>{{ profile_file }}.json</code></a></p>
