@@ -1,9 +1,9 @@
 {
   "fields": [
     {
-      "name": "",
+      "name": "datetime",
       "description": "",
-      "type": "",
+      "type": "datetime",
       "format": "default",
       "constraints": {
         "required": true
