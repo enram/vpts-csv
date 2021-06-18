@@ -3,12 +3,12 @@
 
 # Columns (the more you add, the narrower they will be)
 columns:
-  - description: This project is funded through the [2017-2018 Belmont Forum and BiodivERsA joint 
-      call](https://www.biodiversa.org/1400) for research proposals, under the BiodivScen ERA-Net 
-      COFUND programme, and with the funding organisations Swiss National Science Foundation 
-      (`SNF 31BD30_184120`), Belgian Federal Science Policy Office (`BelSPO BR/185/A1/GloBAM-BE`), 
-      Netherlands Organisation for Scientific Research (`NWO E10008`), Academy of Finland 
-      (`aka 326315`) and National Science Foundation (`NSF 1927743`).
+  - description: This work is the result of [GloBAM](https://globam.science/), a project funded through the 
+      [2017-2018 Belmont Forum and BiodivERsA joint call](https://www.biodiversa.org/1400) for research 
+      proposals, under the BiodivScen ERA-Net COFUND programme, and with the funding organisations Swiss 
+      National Science Foundation (`SNF 31BD30_184120`), Belgian Federal Science Policy Office (`BelSPO 
+      BR/185/A1/GloBAM-BE`), Netherlands Organisation for Scientific Research (`NWO E10008`), Academy of 
+      Finland (`aka 326315`) and National Science Foundation (`NSF 1927743`).
 
 # Small print license statement to add at the bottom of the footer. Can be Markdown
 # Will be prefixed by "© {{ site.author }}" if defined in _config.yml
