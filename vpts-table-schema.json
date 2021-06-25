@@ -2,11 +2,28 @@
   "fields": [
     {
       "name": "datetime",
-      "description": "",
+      "description": "Event date as an ISO8601 format string, UTC time",
       "type": "datetime",
-      "format": "default",
+      "format": "YYYY-MM-DDThh:mm:ssZ",
       "constraints": {
         "required": true
+      }
+    },
+    {
+      "name": "height",
+      "description": "Height above mean sea level, in meters",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "dens",
+      "description": "Density",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0
       }
     }
   ]
