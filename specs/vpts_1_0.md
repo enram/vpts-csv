@@ -31,30 +31,7 @@ and that also conforms to the specifications below:
   
 ## Data file (bird profiles)
 
-- The following fields are allowed in the CSV data:
+To avoid duplication:
 
-| Name     	| Required 	| Description                        	                        | Type/format           |
-|----------	|----------	|------------------------------------	                        |--------------------	|
-| datetime 	| yes      	| Event date                         	                        | ISO8601 string     	|
-| height   	| yes      	| Height above mean sea level, m       	                        | Positive Integer      |
-| dens     	| yes      	| Density                            	                        | Positive float        |
-| ff       	| yes      	| Horizontal speed, m/s                                         | Positive float        |
-| dd       	| yes      	| Direction, degrees                   	                        | Positive float        |
-| eta      	| yes      	| Linear reflectivity                	                        | Positive float        |
-| sd_vvp   	| yes      	| Radial velocity standard deviation 	                        | Positive float        |
-| DBZH     	| yes      	| Total reflectivity factor          	                        | Float              	|
-| dbz      	| no       	| Animal reflectivity factor, dBZ                               | Float              	|
-| u        	| no       	| Speed component west to east, m/s                             | Float              	|
-| v        	| no       	| Speed component north to south, m/s                           | Float              	|
-| gap      	| no       	| Angular data gap detected in                                  | Boolean              	|
-| w        	| no       	| Vertical speed, m/s                                           | Float              	|
-| n_dbz    	| no       	| Number of data points used for reflectivity-based estimates   | Integer               |
-| n         | no        | Number of data points used for the speed estimates            | Positive Integer      |
-| n_all     | no        | Number of data points used for sd_vvp                         | Positive Integer      |
-| n_dbz_all | no        | Number of data points used for DBZH                           | Positive Integer      |
-
-(TODO: make sure type/format have a clear datapackage-type mapping)
-
-- CSV data rows are ordered: first by `datetime` then `height` columns.
-- To make data exploration (by humans!) more user-friendly, it is considered good practice (but not mandatory) that the 
-  field order (in CSV file) respect the field order in the table below.
+- all column information moved to `vpts-able-schema.json`
+- table-wide specs moved to `pages/data.md`

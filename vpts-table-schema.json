@@ -49,7 +49,7 @@
     },
     {
       "name": "eta",
-      "description": "Animal reflectivity in cm^2/km^3",
+      "description": "Animal reflectivity in cm^2/km^3.",
       "type": "number",
       "constraints": {
         "required": true,
@@ -58,7 +58,7 @@
     },
     {
       "name": "sd_vvp",
-      "description": "VVP radial velocity standard deviation in m/s.",
+      "description": "VVP radial velocity standard deviation in m/s",
       "type": "number",
       "format": "default",
       "constraints": {
@@ -68,7 +68,7 @@
     },
     {
       "name": "DBZH",
-      "description": "Total reflectivity factor (bio + meteo scattering) in dBZ.",
+      "description": "Total reflectivity factor (bio + meteo scattering) in dBZ",
       "type": "number",
       "format": "default",
       "constraints": {
@@ -79,13 +79,93 @@
     },
     {
       "name": "dbz",
-      "description": "Animal reflectivity factor in dBZ.",
+      "description": "Animal reflectivity factor in dBZ",
       "type": "number",
       "format": "default",
       "constraints": {
         "required": false,
         "minimum": -100,
         "maximum": 100
+      }
+    },
+    {
+      "name": "u",
+      "description": "Speed component west to east in m/s",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "v",
+      "description": "Speed component north to south in m/s",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "gap",
+      "description": "Angular data gap detected in radial velocity data",
+      "type": "boolean",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "w",
+      "description": "Vertical speed component in m/s",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "n_dbz",
+      "description": "Number of data points used for reflectivity-based estimates (quantities dbz, eta, dens).",
+      "type": "integer",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n",
+      "description": "Number of data points used for the ground speed estimates (quantities u, v, w, ff, dd)",
+      "type": "integer",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n_all",
+      "description": "Number of data points used for the radial velocity standard deviation estimate (quantity sd_vvp)",
+      "type": "integer",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n_dbz_all",
+      "description": "Number of data points used for the total reflectivity estimate (quantity DBZH)",
+      "type": "integer",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": 0
       }
     }
   ]
