@@ -11,19 +11,81 @@
     },
     {
       "name": "height",
-      "description": "Height above mean sea level, in meters",
+      "description": "Height bin (lower bound) in m above sea level",
       "type": "integer",
       "constraints": {
-        "required": true
+        "required": true,
+        "minimum": 0,
+        "maximum": 100000
       }
     },
     {
       "name": "dens",
-      "description": "Density",
+      "description": "Animal density, in animals/km^3.",
       "type": "number",
       "constraints": {
         "required": true,
         "minimum": 0
+      }
+    },
+    {
+      "name": "ff",
+      "description": "Horizontal speed, m/s",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "dd",
+      "description": "Direction, degrees",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 360
+      }
+    },
+    {
+      "name": "eta",
+      "description": "Animal reflectivity in cm^2/km^3",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "sd_vvp",
+      "description": "VVP radial velocity standard deviation in m/s.",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "DBZH",
+      "description": "Total reflectivity factor (bio + meteo scattering) in dBZ.",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": true,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "dbz",
+      "description": "Animal reflectivity factor in dBZ.",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
       }
     }
   ]
