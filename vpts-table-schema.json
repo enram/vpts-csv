@@ -181,7 +181,7 @@
       "description": "Number of data points used for the total reflectivity estimate (quantity DBZH)",
       "type": "integer",
       "format": "default",
-      "example": 80238,
+      "example": "80238",
       "constraints": {
         "required": false,
         "minimum": 0
