@@ -21,7 +21,7 @@
     },
     {
       "name": "dens",
-      "description": "Animal density, in animals/km^3.",
+      "description": "Animal density in animals/km^3.",
       "type": "number",
       "constraints": {
         "required": true,
@@ -30,7 +30,7 @@
     },
     {
       "name": "ff",
-      "description": "Horizontal speed, m/s",
+      "description": "Horizontal ground speed in m/s",
       "type": "number",
       "constraints": {
         "required": true,
@@ -39,7 +39,7 @@
     },
     {
       "name": "dd",
-      "description": "Direction, degrees",
+      "description": "Ground speed direction in degrees clockwise from north",
       "type": "number",
       "constraints": {
         "required": true,
@@ -49,7 +49,7 @@
     },
     {
       "name": "eta",
-      "description": "Animal reflectivity in cm^2/km^3.",
+      "description": "Animal reflectivity in cm^2/km^3",
       "type": "number",
       "constraints": {
         "required": true,
@@ -90,7 +90,7 @@
     },
     {
       "name": "u",
-      "description": "Speed component west to east in m/s",
+      "description": "Ground speed component west to east in m/s",
       "type": "number",
       "format": "default",
       "constraints": {
@@ -101,7 +101,7 @@
     },
     {
       "name": "v",
-      "description": "Speed component north to south in m/s",
+      "description": "Ground speed component north to south in m/s",
       "type": "number",
       "format": "default",
       "constraints": {
@@ -112,7 +112,7 @@
     },
     {
       "name": "gap",
-      "description": "Angular data gap detected in radial velocity data",
+      "description": "Angular data gap detected",
       "type": "boolean",
       "format": "default",
       "constraints": {
@@ -121,7 +121,7 @@
     },
     {
       "name": "w",
-      "description": "Vertical speed component in m/s",
+      "description": "Vertical speed in m/s",
       "type": "number",
       "format": "default",
       "constraints": {
@@ -130,7 +130,7 @@
     },
     {
       "name": "n_dbz",
-      "description": "Number of data points used for reflectivity-based estimates (quantities dbz, eta, dens).",
+      "description": "Number of data points used for reflectivity-based estimates (quantities dbz, eta, dens)",
       "type": "integer",
       "format": "default",
       "constraints": {
