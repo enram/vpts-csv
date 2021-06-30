@@ -13,5 +13,6 @@ Notes:
 - Data rows must be ordered: first by `datetime` then `height` columns.
 - To make data exploration (by humans!) more comfortable, it is considered good practice (but not mandatory) that the 
   fields are presented in the same order as in the table below.
+- The data file MUST only use those fields: no new ones or same concepts under different name  
 
 Fields indicated with `*` are required (i.e. cannot be empty).
