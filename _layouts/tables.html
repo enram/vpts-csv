@@ -22,14 +22,16 @@ layout: base
             <th>Name</th>
             <th>Definition</th>
             <th>Type</th>
+            <th>Constraints</th>
             <th>Example</th>
           </tr>
         </thead>
         <tbody>
           <colgroup>
-            <col width="20%">
-            <col width="50%">
             <col width="10%">
+            <col width="40%">
+            <col width="10%">
+            <col width="20%">
             <col width="20%">
           </colgroup>
           {% for field in table_schema.fields %}
@@ -49,6 +51,17 @@ layout: base
                 {% endif %}
               </td>
               <td>{{ field.type }}</td>
+              <td>
+                {% if field.constraints %}
+                  <ul>
+                    {% for constraint in field.constraints %}
+                      {% if constraint[0] != 'required' %}
+                        <li><code>{{ constraint[0] }} : {{ constraint[1] }}</code></li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </td>
               <td>
                 {% if field.example %}
                   {% for example in field.example %}
