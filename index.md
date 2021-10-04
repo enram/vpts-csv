@@ -24,4 +24,4 @@ Create end-to-end working proof of concept:
 
 ## Contribute
 
-Want to get involved in the development of VPTS-DP? Watch [the repository](https://github.com/enram/vpts-dp) to get notifications and participate in [issue discussions](https://github.com/enram/vpts-dp/issues).
+Questions? Suggestions? Contribute to the development of VPTS-DP by watching the [repository](https://github.com/enram/vpts-dp) and participating in [issue discussions](https://github.com/enram/vpts-dp/issues).
