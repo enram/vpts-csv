@@ -7,32 +7,18 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
 # SITE SETTINGS
 title: VPTS-DP
 description: Data exchange format for biological signals detected by weather radars
-author: GloBAM
-url: "https://enram.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/vpts-dp" # the subpath of your site, e.g. /blog
 
 # SOCIAL PROFILES
-email: 
-twitter_username: 
 github_username: enram/vpts-dp
 
 # THEME SETTINGS
 theme: minima
-remote_theme: peterdesmet/petridish
+remote_theme: peterdesmet/petridish@2.0
 colors:
   links: "#93c243"
   banner: "#93c243"
@@ -40,8 +26,6 @@ colors:
 
 # BUILD SETTINGS
 markdown: kramdown
-plugins:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
