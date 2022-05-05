@@ -1,1 +1,181 @@
-../vpts-table-schema.json
+{
+  "title": "VPTS",
+  "fields": [
+    {
+      "name": "datetime",
+      "description": "Event date and time as an ISO8601 format string, UTC time",
+      "type": "datetime",
+      "format": "YYYY-MM-DDThh:mm:ssZ",
+      "example": "2019-03-27T10:55:00Z",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "height",
+      "description": "Height bin (lower bound) in m above sea level",
+      "type": "integer",
+      "example": "1200",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 100000
+      }
+    },
+    {
+      "name": "dens",
+      "description": "Animal density in animals/km^3.",
+      "type": "number",
+      "example": "17.03",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "ff",
+      "description": "Horizontal ground speed in m/s",
+      "type": "number",
+      "example": "6.09",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "dd",
+      "description": "Ground speed direction in degrees clockwise from north",
+      "type": "number",
+      "example": "86.3",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 360
+      }
+    },
+    {
+      "name": "eta",
+      "description": "Animal reflectivity in cm^2/km^3",
+      "example": "187.3",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "sd_vvp",
+      "description": "VVP radial velocity standard deviation in m/s",
+      "type": "number",
+      "example": "3.88",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "DBZH",
+      "description": "Total reflectivity factor (bio + meteo scattering) in dBZ",
+      "type": "number",
+      "example": "34.07",
+      "constraints": {
+        "required": true,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "dbz",
+      "description": "Animal reflectivity factor in dBZ",
+      "type": "number",
+      "example": "-9.16",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "u",
+      "description": "Ground speed component west to east in m/s",
+      "type": "number",
+      "example": "6.08",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "v",
+      "description": "Ground speed component north to south in m/s",
+      "type": "number",
+      "example": "-0.24",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "gap",
+      "description": "Angular data gap detected",
+      "type": "boolean",
+      "trueValues": [ "true" ],
+      "falseValues": [ "false"],
+      "example": "false",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "w",
+      "description": "Vertical speed in m/s",
+      "type": "number",
+      "example": "2.52",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "n_dbz",
+      "description": "Number of data points used for reflectivity-based estimates (quantities dbz, eta, dens)",
+      "type": "integer",
+      "example": "26710",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n",
+      "description": "Number of data points used for the ground speed estimates (quantities u, v, w, ff, dd)",
+      "type": "integer",
+      "example": "6448",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n_all",
+      "description": "Number of data points used for the radial velocity standard deviation estimate (quantity sd_vvp)",
+      "type": "integer",
+      "example": "17351",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n_dbz_all",
+      "description": "Number of data points used for the total reflectivity estimate (quantity DBZH)",
+      "type": "integer",
+      "example": "80238",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    }
+  ]
+}
