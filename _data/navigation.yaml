@@ -2,9 +2,7 @@
 
 - text: Home
   href: /
-- text: Metadata
-  href: /metadata/
-- text: Data
-  href: /data/
+- text: Format
+  href: /format/
 - text: GitHub
   href: https://github.com/enram/vpts-dp
