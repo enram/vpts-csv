@@ -9,12 +9,12 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # SITE SETTINGS
-title: VPTS-DP
+title: VPTS
 description: Data exchange format for biological signals detected by weather radars
-baseurl: "/vpts-dp" # the subpath of your site, e.g. /blog
+baseurl: "/vpts"
 
 # SOCIAL PROFILES
-github_username: enram/vpts-dp
+github_username: enram/vpts
 
 # THEME SETTINGS
 theme: minima
