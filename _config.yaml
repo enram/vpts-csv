@@ -14,7 +14,7 @@ description: Data exchange format for biological signals detected by weather rad
 baseurl: "/vpts"
 
 # SOCIAL PROFILES
-github_username: enram/vpts
+# None
 
 # THEME SETTINGS
 theme: minima
