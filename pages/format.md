@@ -22,7 +22,9 @@ KBGM,2016-09-01T00:02:00Z,600,4.14,3.84,12.17,5.65,47.2,2.8,FALSE,46.9,4.2636363
 - Data MUST[^1] include the names of the fields (e.g. as a header row).
 - Data MUST refer to fields using the names defined below.
 - Data MUST at least include the required fields (indicated with `*` below).
-- Required fields (indicated with `*` below) cannot be empty.
+- Required fields (indicated with `*` below) SHOULD NOT be empty.
+- Field values SHOULD match the data types as defined below.
+- Field values SHOULD meet the constraints as defined below (e.g. `minimum`).
 - Data SHOULD be ordered by `datetime` and `height` within a `radar`.
 - Data SHOULD have a constant number of `height` records for all `datetime`s of a `radar`.
 - It is RECOMMENDED to organize the fields in the order presented below.
