@@ -12,6 +12,7 @@ VPTS is a tabular format (rows and columns), allowing data to be exchanged as CS
 - Data MUST at least include the required fields (indicated with `*` below).
 - Required fields (indicated with `*` below) cannot be empty.
 - Data SHOULD be ordered by `datetime` and `height` within a `radar`.
+- Data SHOULD have a constant number of `height` records for all `datetime`s of a `radar`.
 - It is RECOMMENDED to organize the fields in the order presented below.
 
 ## Example
