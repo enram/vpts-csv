@@ -1,0 +1,269 @@
+{
+  "title": "Fields",
+  "fields": [
+    {
+      "name": "radar",
+      "description": "Radar identifier.",
+      "type": "string",
+      "example": "KBGM",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "datetime",
+      "description": "Nominal date and time of the measurement, as an ISO 8601 formatted string in UTC.",
+      "type": "datetime",
+      "format": "%Y-%m-%dT%H:%M:%SZ",
+      "example": "2016-09-01T00:02:00Z",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "height",
+      "nameAlternatives": ["HGHT", "bin_lower"],
+      "description": "Lower bound of the altitude bin in m above sea level.",
+      "type": "integer",
+      "example": "600",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 10000
+      }
+    },
+    {
+      "name": "u",
+      "description": "Ground speed component west to east in m/s",
+      "type": "number",
+      "example": "4.14",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "v",
+      "description": "Ground speed component north to south in m/s.",
+      "type": "number",
+      "example": "3.84",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "w",
+      "description": "Vertical speed in m/s.",
+      "type": "number",
+      "example": "12.17",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "ff",
+      "nameAlternatives": "speed",
+      "description": "Horizontal ground speed in m/s.",
+      "type": "number",
+      "example": "5.65",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "dd",
+      "nameAlternatives": "direction",
+      "description": "Ground speed direction in degrees clockwise from north.",
+      "type": "number",
+      "example": "47.2",
+      "constraints": {
+        "required": false,
+        "minimum": 0,
+        "maximum": 360
+      }
+    },
+    {
+      "name": "sd_vvp",
+      "nameAlternatives": "rmse",
+      "description": "VVP radial velocity standard deviation in m/s.",
+      "type": "number",
+      "example": "2.8",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "gap",
+      "description": "Angular data gap detected.",
+      "type": "boolean",
+      "example": "FALSE",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "eta",
+      "nameAlternatives": "linear_eta",
+      "description": "Animal reflectivity in cm^2/km^3.",
+      "example": "46.9",
+      "type": "number",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "dens",
+      "description": "Animal density in animals/km^3.",
+      "type": "number",
+      "example": "4.263636363636364",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "dbz",
+      "description": "Animal reflectivity factor in dBZ.",
+      "type": "number",
+      "example": "3.36",
+      "constraints": {
+        "required": false,
+        "minimum": "-Inf",
+        "maximum": 100
+      }
+    },
+    {
+      "name": "dbz_all",
+      "nameAlternatives": "DBZH",
+      "description": "Total reflectivity factor (bio + meteo scattering) in dBZ.",
+      "type": "number",
+      "example": "0.5",
+      "constraints": {
+        "required": false,
+        "minimum": -100,
+        "maximum": 100
+      }
+    },
+    {
+      "name": "n",
+      "description": "Number of data points used for the ground speed estimates (quantities `u`, `v`, `w`, `ff`, `dd`).",
+      "type": "integer",
+      "example": "9006",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n_dbz",
+      "description": "Number of data points used for reflectivity-based estimates (quantities `dbz`, `eta`, `dens`).",
+      "type": "integer",
+      "example": "13442",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n_all",
+      "description": "Number of data points used for the radial velocity standard deviation estimate (quantity `sd_vvp`).",
+      "type": "integer",
+      "example": "65947",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "n_dbz_all",
+      "nameAlternatives": "nbins",
+      "description": "Number of data points used for the total reflectivity estimate (quantity `dbz_all`).",
+      "type": "integer",
+      "example": "104455",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "rcs",
+      "description": "Radar cross section per bird in cm^2.",
+      "type": "integer",
+      "example": "11",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "sd_vvp_threshold",
+      "description": "Lower threshold in radial velocity standard deviation (profile quantity `sd_vvp`) in m/s. Biological signals with `sd_vvp < sd_vvp_threshold` are set to zero. Defaults to 2 m/s for C-band radars and 1 m/s for S-band radars if not specified.",
+      "type": "integer",
+      "example": "2",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "vcp",
+      "description": "Volume coverage pattern.",
+      "type": "integer",
+      "example": "",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "radar_lon",
+      "description": "Longitude of the radar location in decimal degrees, using the WGS84 datum.",
+      "type": "number",
+      "example": "-75.98472",
+      "constraints": {
+        "required": true,
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "radar_lat",
+      "description": "Latitude of the radar location in decimal degrees, using the WGS84 datum.",
+      "type": "number",
+      "example": "42.19972",
+      "constraints": {
+        "required": true,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "radar_height",
+      "description": "Height of the center of the radar antenna in m above sea level.",
+      "type": "integer",
+      "example": "519",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "radar_wavelength",
+      "description": "Wavelength of the radar in cm. 5.3 cm is the typical wavelength for C-band radar, 10.6 cm the typical wavelength for S-band radar.",
+      "type": "number",
+      "example": "10.6",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "missingValues": [
+    "",
+    "NA"
+  ]
+}
