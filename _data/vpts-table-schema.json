@@ -134,7 +134,7 @@
       "example": "3.36",
       "constraints": {
         "required": false,
-        "minimum": -100,
+        "minimum": "-Inf",
         "maximum": 100
       }
     },
