@@ -70,7 +70,7 @@
       "type": "number",
       "example": "5.65",
       "constraints": {
-        "required": "true",
+        "required": true,
         "minimum": 0
       }
     },
@@ -81,7 +81,7 @@
       "type": "number",
       "example": "47.2",
       "constraints": {
-        "required": "true",
+        "required": true,
         "minimum": 0,
         "maximum": 360
       }
@@ -93,7 +93,7 @@
       "type": "number",
       "example": "2.8",
       "constraints": {
-        "required": "true",
+        "required": true,
         "minimum": 0
       }
     },
@@ -113,7 +113,7 @@
       "example": "46.9",
       "type": "number",
       "constraints": {
-        "required": "true",
+        "required": true,
         "minimum": 0
       }
     },
@@ -123,7 +123,7 @@
       "type": "number",
       "example": "4.263636363636364",
       "constraints": {
-        "required": "true",
+        "required": true,
         "minimum": 0
       }
     },
@@ -145,7 +145,7 @@
       "type": "number",
       "example": "0.5",
       "constraints": {
-        "required": "true",
+        "required": true,
         "minimum": -100,
         "maximum": 100
       }
@@ -214,10 +214,10 @@
     {
       "name": "vcp",
       "description": "Volume coverage pattern.",
-      "type": "",
+      "type": "integer",
       "example": "",
       "constraints": {
-        "required": true
+        "required": false
       }
     },
     {
