@@ -56,6 +56,14 @@ layout: base
                     {% endfor %}
                   </ul>
                 {% endif %}
+                {% if field.nameAlternatives %}
+                  <span class="small text-muted">
+                    Alternative names:
+                    {% for name in field.nameAlternatives %}
+                      <code>{{ name }}</code>{% if forloop.last == false %}, {% endif %}
+                    {% endfor %}
+                  </span>
+                {% endif %}
               </td>
               <td>{{ field.type }}</td>
               <td>

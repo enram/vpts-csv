@@ -22,6 +22,7 @@
     },
     {
       "name": "height",
+      "nameAlternatives": ["HGHT", "bin_lower"],
       "description": "Lower bound of the altitude bin in m above sea level.",
       "type": "integer",
       "example": "600",
@@ -64,6 +65,7 @@
     },
     {
       "name": "ff",
+      "nameAlternatives": "speed",
       "description": "Horizontal ground speed in m/s.",
       "type": "number",
       "example": "5.65",
@@ -74,6 +76,7 @@
     },
     {
       "name": "dd",
+      "nameAlternatives": "direction",
       "description": "Ground speed direction in degrees clockwise from north.",
       "type": "number",
       "example": "47.2",
@@ -85,6 +88,7 @@
     },
     {
       "name": "sd_vvp",
+      "nameAlternatives": "rmse",
       "description": "VVP radial velocity standard deviation in m/s.",
       "type": "number",
       "example": "2.8",
@@ -104,6 +108,7 @@
     },
     {
       "name": "eta",
+      "nameAlternatives": "linear_eta",
       "description": "Animal reflectivity in cm^2/km^3.",
       "example": "46.9",
       "type": "number",
@@ -135,7 +140,8 @@
     },
     {
       "name": "dbz_all",
-      "description": "Total reflectivity factor (bio + meteo scattering) in dBZ. Sometimes named `DBZH`.",
+      "nameAlternatives": "DBZH",
+      "description": "Total reflectivity factor (bio + meteo scattering) in dBZ.",
       "type": "number",
       "example": "0.5",
       "constraints": {
@@ -176,6 +182,7 @@
     },
     {
       "name": "n_dbz_all",
+      "nameAlternatives": "nbins",
       "description": "Number of data points used for the total reflectivity estimate (quantity `dbz_all`).",
       "type": "integer",
       "example": "104455",
@@ -206,7 +213,7 @@
     },
     {
       "name": "vcp",
-      "description": "",
+      "description": "Volume coverage pattern.",
       "type": "",
       "example": "",
       "constraints": {
