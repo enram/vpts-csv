@@ -176,12 +176,82 @@
     },
     {
       "name": "n_dbz_all",
-      "description": "Number of data points used for the total reflectivity estimate (quantity `dbz_all`)",
+      "description": "Number of data points used for the total reflectivity estimate (quantity `dbz_all`).",
       "type": "integer",
       "example": "104455",
       "constraints": {
         "required": false,
         "minimum": 0
+      }
+    },
+    {
+      "name": "rcs",
+      "description": "Radar cross section per bird in cm^2.",
+      "type": "integer",
+      "example": "11",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "sd_vvp_threshold",
+      "description": "Lower threshold in radial velocity standard deviation (profile quantity `sd_vvp`) in m/s. Biological signals with `sd_vvp < sd_vvp_threshold` are set to zero. Defaults to 2 m/s for C-band radars and 1 m/s for S-band radars if not specified.",
+      "type": "integer",
+      "example": "2",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "vcp",
+      "description": "",
+      "type": "",
+      "example": "",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "radar_lon",
+      "description": "Longitude of the radar location in decimal degrees, using the WGS84 datum.",
+      "type": "number",
+      "example": "-75.98472",
+      "constraints": {
+        "required": true,
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "radar_lat",
+      "description": "Latitude of the radar location in decimal degrees, using the WGS84 datum.",
+      "type": "number",
+      "example": "42.19972",
+      "constraints": {
+        "required": true,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "radar_height",
+      "description": "Height of the center of the radar antenna in m above sea level.",
+      "type": "integer",
+      "example": "519",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "radar_wavelength",
+      "description": "Wavelength of the radar in cm. 5.3 cm is the typical wavelength for C-band radar, 10.6 cm the typical wavelength for S-band radar.",
+      "type": "number",
+      "example": "10.6",
+      "constraints": {
+        "required": true
       }
     }
   ]
