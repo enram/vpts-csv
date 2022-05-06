@@ -7,10 +7,12 @@ permalink: /format/
 
 VPTS is a tabular format (rows and columns), allowing data to be exchanged as CSV files. Rows express the density, speed and direction of biological signals such as birds, bats and insects within the weather radar volume, grouped into altitude layers (`height`) and measured over time (`datetime`). Columns/fields are defined below.
 
-- Data SHOULD contain all fields presented below.
-- It is RECOMMENDED to organize fields in the order presented below.
-- Fields indicated with `*` are REQUIRED (i.e. cannot be empty).
-- Data MUST be ordered by `datetime` and `height` within a `radar`.
+- Data MUST include the names of the fields (e.g. as a header row).
+- Data MUST refer to fields using the names defined below.
+- Data MUST at least include the required fields (indicated with `*` below).
+- Required fields (indicated with `*` below) cannot be empty.
+- Data SHOULD be ordered by `datetime` and `height` within a `radar`.
+- It is RECOMMENDED to organize the fields in the order presented below.
 
 ## Example
 
