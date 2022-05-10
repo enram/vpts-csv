@@ -221,7 +221,7 @@
       }
     },
     {
-      "name": "radar_lon",
+      "name": "radar_longitude",
       "description": "Longitude of the radar location in decimal degrees, using the WGS84 datum.",
       "type": "number",
       "example": "-75.98472",
@@ -232,7 +232,7 @@
       }
     },
     {
-      "name": "radar_lat",
+      "name": "radar_latitude",
       "description": "Latitude of the radar location in decimal degrees, using the WGS84 datum.",
       "type": "number",
       "example": "42.19972",
