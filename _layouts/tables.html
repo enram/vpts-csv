@@ -58,7 +58,7 @@ layout: base
                 {% endif %}
                 {% if field.nameAlternatives %}
                   <span class="small text-muted">
-                    Alternative names:
+                    Also known as:
                     {% for name in field.nameAlternatives %}
                       <code>{{ name }}</code>{% if forloop.last == false %}, {% endif %}
                     {% endfor %}
