@@ -194,7 +194,7 @@
     {
       "name": "rcs",
       "description": "Radar cross section per bird in cm^2.",
-      "type": "integer",
+      "type": "number",
       "example": "11",
       "constraints": {
         "required": false,
@@ -204,7 +204,7 @@
     {
       "name": "sd_vvp_threshold",
       "description": "Lower threshold in radial velocity standard deviation (profile quantity `sd_vvp`) in m/s. Biological signals with `sd_vvp < sd_vvp_threshold` are set to zero. Defaults to 2 m/s for C-band radars and 1 m/s for S-band radars if not specified.",
-      "type": "integer",
+      "type": "number",
       "example": "2",
       "constraints": {
         "required": false,
