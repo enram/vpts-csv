@@ -10,7 +10,7 @@ VPTS is a tabular format (rows and columns), allowing data to be exchanged as CS
 ## Example
 
 ```
-radar,datetime,height,u,v,w,ff,dd,sd_vvp,gap,eta,dens,dbz,dbz_all,n,n_dbz,n_all,n_dbz_all,rcs,sd_vvp_threshold,vcp,radar_lon,radar_lat,radar_height,radar_wavelength
+radar,datetime,height,u,v,w,ff,dd,sd_vvp,gap,eta,dens,dbz,dbz_all,n,n_dbz,n_all,n_dbz_all,rcs,sd_vvp_threshold,vcp,radar_longitude,radar_latitude,radar_height,radar_wavelength
 KBGM,2016-09-01T00:02:00Z,0,,,,,,,TRUE,,,,,0,0,0,0,11,2,,-75.98472,42.19972,519,10.6
 KBGM,2016-09-01T00:02:00Z,200,,,,,,,TRUE,,,,,0,0,0,0,11,2,,-75.98472,42.19972,519,10.6
 KBGM,2016-09-01T00:02:00Z,400,,,,,,2.81,TRUE,30.8,2.8000000000000003,1.54,3.77,326,356,22485,28416,11,2,,-75.98472,42.19972,519,10.6
