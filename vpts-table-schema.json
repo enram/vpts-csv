@@ -70,7 +70,7 @@
       "type": "number",
       "example": "5.65",
       "constraints": {
-        "required": false,
+        "required": true,
         "minimum": 0
       }
     },
@@ -81,7 +81,7 @@
       "type": "number",
       "example": "47.2",
       "constraints": {
-        "required": false,
+        "required": true,
         "minimum": 0,
         "maximum": 360
       }
@@ -93,7 +93,7 @@
       "type": "number",
       "example": "2.8",
       "constraints": {
-        "required": false,
+        "required": true,
         "minimum": 0
       }
     },
@@ -113,7 +113,7 @@
       "example": "46.9",
       "type": "number",
       "constraints": {
-        "required": false,
+        "required": true,
         "minimum": 0
       }
     },
@@ -197,7 +197,7 @@
       "type": "integer",
       "example": "11",
       "constraints": {
-        "required": true,
+        "required": false,
         "minimum": 0
       }
     },
@@ -207,7 +207,7 @@
       "type": "integer",
       "example": "2",
       "constraints": {
-        "required": true,
+        "required": false,
         "minimum": 0
       }
     },
