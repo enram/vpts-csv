@@ -5,7 +5,7 @@ description: Description of the VPTS format and fields
 permalink: /format/
 ---
 
-VPTS is a tabular format (rows and columns), allowing data to be exchanged as CSV files. Rows express the density, speed and direction of biological signals such as birds, bats and insects within the weather radar volume, grouped into altitude layers (`height`) and measured over time (`datetime`). Columns/fields are defined below.
+VPTS is a tabular format (rows and columns), allowing data to be exchanged as CSV files. Rows express the density, speed and direction of biological signals such as birds, bats and insects within the weather radar volume, grouped into altitude layers (`height`) and measured over time (`datetime`). Columns/fields are defined below using [Table Schema](https://specs.frictionlessdata.io/table-schema/) properties.
 
 ## Example
 
@@ -22,7 +22,7 @@ KBGM,2016-09-01T00:02:00Z,600,4.14,3.84,12.17,5.65,47.2,2.8,FALSE,46.9,4.2636363
 - Data MUST[^1] include the names of the fields (e.g. as a header row).
 - Data MUST refer to fields using the names defined below.
 - Data MUST at least include the required fields (indicated with `*` below).
-- Required fields (indicated with `*` below) SHOULD NOT be empty.
+- Data MUST use [this CSV dialect](https://github.com/enram/vpts/blob/main/vpts-csv-dialect.json) when expressed as CSV. See [CSV dialect documentation](https://specs.frictionlessdata.io/csv-dialect/).
 - Field values SHOULD match the data types as defined below.
 - Field values SHOULD meet the constraints as defined below, except for `NaN`, `NA` and empty values.
 - Data SHOULD be ordered by `datetime` and `height` within a `radar`.
