@@ -217,7 +217,8 @@
     },
     {
       "name": "vcp",
-      "description": "Volume coverage pattern.",
+      "nameAlternatives": "scan_strategy",
+      "description": "Volume coverage pattern, unitless. Documented on [Wikipedia](https://en.wikipedia.org/wiki/NEXRAD#Scan_strategies) for NEXRAD.",
       "type": "integer",
       "example": "",
       "constraints": {
