@@ -12,7 +12,7 @@ layout: base
 
       <h2 id="{{ table_schema.title | downcase | url_encode }}">{{ table_schema.title }}</h2>
 
-      <p class="small">Source: <a href="https://github.com/{{ site.github_username }}/blob/main/{{ table_schema_file }}.json"><code>{{ table_schema_file }}.json</code></a></p>
+      <p class="small">Source: <a href="https://github.com/enram/vpts/blob/main/{{ table_schema_file }}.json"><code>{{ table_schema_file }}.json</code></a></p>
 
       {{ table_schema.description | markdownify }}
       
