@@ -48,9 +48,10 @@ layout: base
                   </ul>
                 {% endif %}
                 {% if field.constraints %}
+                  <strong>Constraints</strong>
                   <ul>
                     {% for constraint in field.constraints %}
-                      {% if constraint[0] != 'required' and constraint[0] != 'enum' %}
+                      {% if constraint[0] != 'enum' %}
                         <li>{{ constraint[0] }}: <code>{{ constraint[1] }}</code></li>
                       {% endif %}
                     {% endfor %}
