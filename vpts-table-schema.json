@@ -28,7 +28,7 @@
       "example": "600",
       "constraints": {
         "required": true,
-        "minimum": 0,
+        "minimum": -200,
         "maximum": 10000
       }
     },
@@ -71,7 +71,8 @@
       "example": "5.65",
       "constraints": {
         "required": true,
-        "minimum": 0
+        "minimum": 0,
+        "maximum": 100
       }
     },
     {
@@ -94,7 +95,8 @@
       "example": "2.8",
       "constraints": {
         "required": true,
-        "minimum": 0
+        "minimum": 0,
+        "maximum": 100
       }
     },
     {
@@ -114,7 +116,8 @@
       "type": "number",
       "constraints": {
         "required": true,
-        "minimum": 0
+        "minimum": 0,
+        "maximum": "Inf"
       }
     },
     {
@@ -124,7 +127,8 @@
       "example": "4.263636363636364",
       "constraints": {
         "required": false,
-        "minimum": 0
+        "minimum": 0,
+        "maximum": "Inf"
       }
     },
     {
@@ -146,8 +150,8 @@
       "example": "0.5",
       "constraints": {
         "required": false,
-        "minimum": -100,
-        "maximum": 100
+        "minimum": "-Inf",
+        "maximum": 1000
       }
     },
     {
@@ -198,7 +202,7 @@
       "example": "11",
       "constraints": {
         "required": false,
-        "minimum": 0
+        "minimum": 0.1
       }
     },
     {
@@ -217,7 +221,8 @@
       "type": "integer",
       "example": "",
       "constraints": {
-        "required": false
+        "required": false,
+        "minimum": 0
       }
     },
     {
@@ -249,7 +254,7 @@
       "example": "519",
       "constraints": {
         "required": true,
-        "minimum": 0
+        "minimum": -200
       }
     },
     {
@@ -258,7 +263,9 @@
       "type": "number",
       "example": "10.6",
       "constraints": {
-        "required": true
+        "required": true,
+        "minimum": 0.1,
+        "maximum": 100
       }
     }
   ],
