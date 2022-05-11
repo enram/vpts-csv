@@ -260,7 +260,7 @@
     },
     {
       "name": "radar_wavelength",
-      "description": "Wavelength of the radar in cm. 5.3 cm is the typical wavelength for C-band radar, 10.6 cm the typical wavelength for S-band radar.",
+      "description": "Wavelength of the radar in cm. If unknown, use 5.3 cm for C-band and 10.6 cm for S-band radar.",
       "type": "number",
       "example": "10.6",
       "constraints": {
