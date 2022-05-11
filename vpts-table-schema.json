@@ -38,7 +38,6 @@
       "type": "number",
       "example": "4.14",
       "constraints": {
-        "required": false,
         "minimum": -100,
         "maximum": 100
       }
@@ -49,7 +48,6 @@
       "type": "number",
       "example": "3.84",
       "constraints": {
-        "required": false,
         "minimum": -100,
         "maximum": 100
       }
@@ -58,10 +56,7 @@
       "name": "w",
       "description": "Vertical speed in m/s.",
       "type": "number",
-      "example": "12.17",
-      "constraints": {
-        "required": false
-      }
+      "example": "12.17"
     },
     {
       "name": "ff",
@@ -103,10 +98,7 @@
       "name": "gap",
       "description": "Angular data gap detected.",
       "type": "boolean",
-      "example": "FALSE",
-      "constraints": {
-        "required": false
-      }
+      "example": "FALSE"
     },
     {
       "name": "eta",
@@ -126,7 +118,6 @@
       "type": "number",
       "example": "4.263636363636364",
       "constraints": {
-        "required": false,
         "minimum": 0,
         "maximum": "Inf"
       }
@@ -137,7 +128,6 @@
       "type": "number",
       "example": "3.36",
       "constraints": {
-        "required": false,
         "minimum": "-Inf",
         "maximum": 100
       }
@@ -149,7 +139,6 @@
       "type": "number",
       "example": "0.5",
       "constraints": {
-        "required": false,
         "minimum": "-Inf",
         "maximum": 1000
       }
@@ -160,7 +149,6 @@
       "type": "integer",
       "example": "9006",
       "constraints": {
-        "required": false,
         "minimum": 0
       }
     },
@@ -170,7 +158,6 @@
       "type": "integer",
       "example": "13442",
       "constraints": {
-        "required": false,
         "minimum": 0
       }
     },
@@ -180,7 +167,6 @@
       "type": "integer",
       "example": "65947",
       "constraints": {
-        "required": false,
         "minimum": 0
       }
     },
@@ -191,7 +177,6 @@
       "type": "integer",
       "example": "104455",
       "constraints": {
-        "required": false,
         "minimum": 0
       }
     },
@@ -201,7 +186,6 @@
       "type": "number",
       "example": "11",
       "constraints": {
-        "required": false,
         "minimum": 0.1
       }
     },
@@ -211,7 +195,6 @@
       "type": "number",
       "example": "2",
       "constraints": {
-        "required": false,
         "minimum": 0
       }
     },
@@ -222,7 +205,6 @@
       "type": "integer",
       "example": "",
       "constraints": {
-        "required": false,
         "minimum": 0
       }
     },
