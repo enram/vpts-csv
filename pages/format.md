@@ -29,6 +29,6 @@ KBGM,2016-09-01T00:02:00Z,600,4.14,3.84,12.17,5.65,47.2,2.8,FALSE,46.9,4.2636363
 - Field values SHOULD meet the constraints as defined below, except for `NaN` and `NA` values.
 - Data SHOULD be ordered by `datetime` and `height` within a `radar`.
 - Data SHOULD have the same `height`s for all `datetime`s of a `radar`.
-- It is RECOMMENDED to organize the fields in the order presented below.
+- Fields SHOULD be organized in the order presented below.
 
 [^1]: The key words `MUST`, `MUST NOT`, `REQUIRED`, `SHALL`, `SHALL NOT`, `SHOULD`, `SHOULD NOT`, `RECOMMENDED`, `MAY`, and `OPTIONAL` in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
