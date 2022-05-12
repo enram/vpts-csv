@@ -29,7 +29,7 @@
       "constraints": {
         "required": true,
         "minimum": -200,
-        "maximum": 10000
+        "maximum": 25000
       }
     },
     {
@@ -140,7 +140,7 @@
       "example": "0.5",
       "constraints": {
         "minimum": "-Inf",
-        "maximum": 1000
+        "maximum": 100
       }
     },
     {
@@ -186,7 +186,8 @@
       "type": "number",
       "example": "11",
       "constraints": {
-        "minimum": 0.1
+        "minimum": 0.01,
+        "maximum": "Inf"
       }
     },
     {
@@ -195,7 +196,8 @@
       "type": "number",
       "example": "2",
       "constraints": {
-        "minimum": 0
+        "minimum": 0,
+        "maximum": 100
       }
     },
     {
@@ -237,7 +239,8 @@
       "example": "519",
       "constraints": {
         "required": true,
-        "minimum": -200
+        "minimum": -200,
+        "maximum": 9000
       }
     },
     {
