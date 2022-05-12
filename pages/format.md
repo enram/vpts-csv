@@ -23,8 +23,10 @@ KBGM,2016-09-01T00:02:00Z,600,4.14,3.84,12.17,5.65,47.2,2.8,FALSE,46.9,4.2636363
 - Data MUST refer to fields using the names defined below.
 - Data MUST at least include the required fields (indicated with `*` below).
 - Data MUST use [this CSV dialect](https://github.com/enram/vpts/blob/main/vpts-csv-dialect.json) when expressed as CSV. See [CSV dialect documentation](https://specs.frictionlessdata.io/csv-dialect/).
+- `nodata` values SHOULD be expressed as `NA`.
+- `undetect` values SHOULD be expressed as `NaN`.
 - Field values SHOULD match the data types as defined below.
-- Field values SHOULD meet the constraints as defined below, except for `NaN`, `NA` and empty values.
+- Field values SHOULD meet the constraints as defined below, except for `NaN` and `NA` values.
 - Data SHOULD be ordered by `datetime` and `height` within a `radar`.
 - Data SHOULD have the same `height`s for all `datetime`s of a `radar`.
 - It is RECOMMENDED to organize the fields in the order presented below.
