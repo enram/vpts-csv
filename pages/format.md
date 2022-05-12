@@ -5,7 +5,9 @@ description: Description of the VPTS format and fields
 permalink: /format/
 ---
 
-VPTS is a tabular format (rows and columns), allowing data to be exchanged as CSV files. Rows express the density, speed and direction of biological signals such as birds, bats and insects within the weather radar volume, grouped into altitude layers (`height`) and measured over time (`datetime`). Columns/fields are defined below using [Table Schema](https://specs.frictionlessdata.io/table-schema/) properties.
+VPTS is a community developed **data exchange format** for biological signals detected by weather radars. VPTS (vertical profile time series) express the density, speed and direction of biological signals such as birds, bats and insects within a weather radar volume, grouped into altitude layers (`height`) and measured over time (`datetime`).
+
+VPTS is a tabular format (rows and columns), allowing data to be expressed as CSV files. Columns/fields are defined below using [Table Schema](https://specs.frictionlessdata.io/table-schema/) properties. The format aims to be simple rather than comprehensive, containing the most important information, rather than all the available metadata.
 
 ## Example
 

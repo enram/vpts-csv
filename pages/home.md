@@ -7,7 +7,7 @@ permalink: /
 
 [![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
-VPTS is a community developed **data exchange format** for biological signals detected by weather radars. VPTS (vertical profile time series) express the density, speed and direction of biological signals such as birds, bats and insects within the weather radar volume, grouped into altitude layers and measured over time.
+VPTS is a community developed **data exchange format** for biological signals detected by weather radars. VPTS (vertical profile time series) express the density, speed and direction of biological signals such as birds, bats and insects within a weather radar volume, grouped into altitude layers and measured over time.
 
 [Description of the format]({{ '/format/' | relative_url }})
 
