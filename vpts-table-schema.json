@@ -34,7 +34,7 @@
     },
     {
       "name": "u",
-      "description": "Ground speed component west to east in m/s",
+      "description": "Ground speed component west to east in m/s.",
       "type": "number",
       "example": "4.14",
       "constraints": {
@@ -186,7 +186,7 @@
       "type": "number",
       "example": "11",
       "constraints": {
-        "minimum": 0.01,
+        "minimum": 1e-15,
         "maximum": "Inf"
       }
     },
