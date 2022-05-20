@@ -212,7 +212,7 @@
     },
     {
       "name": "radar_longitude",
-      "description": "Longitude of the radar location in decimal degrees, using the WGS84 datum.",
+      "description": "Longitude of the radar location in decimal degrees, using the WGS84 datum. Constant for all records from the same `radar`.",
       "type": "number",
       "example": "-75.98472",
       "constraints": {
@@ -223,7 +223,7 @@
     },
     {
       "name": "radar_latitude",
-      "description": "Latitude of the radar location in decimal degrees, using the WGS84 datum.",
+      "description": "Latitude of the radar location in decimal degrees, using the WGS84 datum. Constant for all records from the same `radar`.",
       "type": "number",
       "example": "42.19972",
       "constraints": {
@@ -234,7 +234,7 @@
     },
     {
       "name": "radar_height",
-      "description": "Height of the center of the radar antenna in m above sea level.",
+      "description": "Height of the center of the radar antenna in m above sea level. Constant for all records from the same `radar`.",
       "type": "integer",
       "example": "519",
       "constraints": {
@@ -245,7 +245,7 @@
     },
     {
       "name": "radar_wavelength",
-      "description": "Wavelength of the radar in cm. If unknown, use 5.3 cm for C-band and 10.6 cm for S-band radar.",
+      "description": "Wavelength of the radar in cm. If unknown, use 5.3 cm for C-band and 10.6 cm for S-band radar. Constant for all records from the same `radar`.",
       "type": "number",
       "example": "10.6",
       "constraints": {
