@@ -245,7 +245,7 @@
     },
     {
       "name": "radar_wavelength",
-      "description": "Wavelength of the radar in cm. If unknown, use 5.3 cm for C-band and 10.6 cm for S-band radar. Constant for all records from the same `radar`.",
+      "description": "Wavelength of the radar in cm. Constant for all records from the same `radar`. Most C-band radars operate at approximately 5.3 cm wavelength, most S-band radars at 10.6 cm.",
       "type": "number",
       "example": "10.6",
       "constraints": {
