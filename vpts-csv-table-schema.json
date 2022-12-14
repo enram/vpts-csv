@@ -205,10 +205,7 @@
       "nameAlternatives": "scan_strategy",
       "description": "Volume coverage pattern, unitless. Documented on [Wikipedia](https://en.wikipedia.org/wiki/NEXRAD#Scan_strategies) for NEXRAD.",
       "type": "integer",
-      "example": "",
-      "constraints": {
-        "enum": [12, 212, 112, 215, 121, 31, 32, 35]
-      }
+      "example": ""
     },
     {
       "name": "radar_longitude",
