@@ -65,7 +65,6 @@
       "type": "number",
       "example": "5.65",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": 100
       }
@@ -77,7 +76,6 @@
       "type": "number",
       "example": "47.2",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": 360
       }
@@ -89,7 +87,6 @@
       "type": "number",
       "example": "2.8",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": 100
       }
@@ -107,7 +104,6 @@
       "example": "46.9",
       "type": "number",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": "Inf"
       }
