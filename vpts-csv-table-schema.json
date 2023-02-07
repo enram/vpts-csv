@@ -249,9 +249,12 @@
     },
     {
       "name": "source_file",
-      "description": "Path to the source file from which the data were derived.",
-      "type": "text",
-      "example": "s3://noaa-nexrad-level2/2016/09/01/KBGM/KBGM20160901_000212_V06"
+      "description": "URL or path to the source file from which the data were derived.",
+      "type": "string",
+      "example": "s3://noaa-nexrad-level2/2016/09/01/KBGM/KBGM20160901_000212_V06",
+      "constraints": {
+        "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$"
+      }
     }
   ],
   "missingValues": [
