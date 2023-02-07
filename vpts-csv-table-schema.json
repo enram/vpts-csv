@@ -65,7 +65,6 @@
       "type": "number",
       "example": "5.65",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": 100
       }
@@ -77,7 +76,6 @@
       "type": "number",
       "example": "47.2",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": 360
       }
@@ -89,7 +87,6 @@
       "type": "number",
       "example": "2.8",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": 100
       }
@@ -107,7 +104,6 @@
       "example": "46.9",
       "type": "number",
       "constraints": {
-        "required": true,
         "minimum": 0,
         "maximum": "Inf"
       }
@@ -208,17 +204,6 @@
       "example": ""
     },
     {
-      "name": "radar_longitude",
-      "description": "Longitude of the radar location in decimal degrees, using the WGS84 datum. Constant for all records from the same `radar`.",
-      "type": "number",
-      "example": "-75.98472",
-      "constraints": {
-        "required": true,
-        "minimum": -180,
-        "maximum": 180
-      }
-    },
-    {
       "name": "radar_latitude",
       "description": "Latitude of the radar location in decimal degrees, using the WGS84 datum. Constant for all records from the same `radar`.",
       "type": "number",
@@ -227,6 +212,17 @@
         "required": true,
         "minimum": -90,
         "maximum": 90
+      }
+    },
+    {
+      "name": "radar_longitude",
+      "description": "Longitude of the radar location in decimal degrees, using the WGS84 datum. Constant for all records from the same `radar`.",
+      "type": "number",
+      "example": "-75.98472",
+      "constraints": {
+        "required": true,
+        "minimum": -180,
+        "maximum": 180
       }
     },
     {
@@ -250,10 +246,20 @@
         "minimum": 0.1,
         "maximum": 100
       }
+    },
+    {
+      "name": "source_file",
+      "description": "URL or path to the source file from which the data were derived.",
+      "type": "string",
+      "example": "s3://noaa-nexrad-level2/2016/09/01/KBGM/KBGM20160901_000212_V06",
+      "constraints": {
+        "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$"
+      }
     }
   ],
   "missingValues": [
     "",
-    "NA"
+    "NA",
+    "NaN"
   ]
 }
