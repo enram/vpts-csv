@@ -1,6 +1,6 @@
 # VPTS CSV
 
-[![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 VPTS CSV is a community developed **data exchange format** for biological signals detected by weather radars. See the [documentation page](https://aloftdata.eu/vpts-csv/).
 
