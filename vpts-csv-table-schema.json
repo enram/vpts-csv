@@ -253,7 +253,7 @@
       "type": "string",
       "example": "s3://noaa-nexrad-level2/2016/09/01/KBGM/KBGM20160901_000212_V06",
       "constraints": {
-        "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$"
+        "pattern": "^(?=^[^.~])(^((?!\\.{2}).)*$).*$"
       }
     }
   ],
