@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+type: software
+license: MIT
+title: VPTS CSV
+version: 1.0
+abstract: >-
+  Data exchange format for biological signals detected by
+  weather radars.
+authors:
+  - given-names: Peter
+    family-names: Desmet
+    email: peter.desmet@inbo.be
+    orcid: https://orcid.org/0000-0002-8442-8025
+    affiliation: Research Institute for Nature and Forest (INBO)
+  - given-names: Nicolas
+    family-names: Noé
+    orcid: https://orcid.org/0000-0002-9503-4750
+  - given-names: Adriaan M.
+    family-names: Dokter
+    orcid: https://orcid.org/0000-0001-6573-066X
+    affiliation: Cornell Lab of Ornithology
+repository-code: https://github.com/enram/vpts-csv
+url: https://aloftdata.eu/vpts-csv
+date-released: '2023-12-18'
+keywords:
+- data exchange format
+- frictionlessdata
+- aeroecology
+- weather radar
